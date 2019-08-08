@@ -1,0 +1,10 @@
+// Generate a hover crossfader.
+@mixin hover-crossfader($property: color) {
+    transition: $property .1s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+        transition: none;
+    }
+}

@@ -1,0 +1,19 @@
+@mixin font-body() {
+    font-family: Inter, sans-serif;
+}
+
+
+@mixin font-hed() {
+    @include font-body;
+
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+@mixin font-subhed() {
+    @include font-body;
+
+    font-style: normal;
+    font-weight: 300;
+}

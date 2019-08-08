@@ -1,0 +1,8 @@
+.l-window-header {
+    background: $window-header-bg-color;
+    padding: $base-gap $base-gap ($base-gap + 1);
+
+    h1 {
+        margin: 0;
+    }
+}

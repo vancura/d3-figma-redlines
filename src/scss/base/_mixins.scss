@@ -1,0 +1,11 @@
+@mixin smaller-font {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+}
+
+
+@mixin retina-zoom() {
+    transform: scale(0.5);
+    transform-origin: center center;
+}
+

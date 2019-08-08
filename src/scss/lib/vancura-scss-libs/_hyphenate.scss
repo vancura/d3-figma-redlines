@@ -1,0 +1,11 @@
+// noinspection CssUnknownProperty,CssOverwrittenProperties,CssBrowserCompatibilityForProperties
+%hyphenate {
+    word-break: break-all;
+    word-break: break-word; // non standard for webkit
+
+    hyphens: auto;
+
+    hyphenate-before: 2;
+    hyphenate-after: 3;
+    hyphenate-lines: 3;
+}

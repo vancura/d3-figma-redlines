@@ -1,0 +1,54 @@
+{
+    "name": "d3-figma-redlines",
+    "version": "0.0.1",
+    "title": "D3 Redlines",
+    "description": "DevDivDesign (D3) redlining tool",
+    "authors": [
+        "Vaclav Vancura <vacvan@microsoft.com>"
+    ],
+    "homepage": "",
+    "private": true,
+    "license": "MIT",
+
+    "figmaPlugin": {
+        "name": "D3 Redlines",
+        "id": "741288084767475070",
+        "api": "1.0.0",
+        "main": "code.js",
+        "ui": "ui.html"
+    },
+
+    "main": "code.js",
+
+    "scripts": {
+        "build": "webpack --mode=production",
+        "dev": "webpack --watch"
+    },
+
+    "devDependencies": {
+        "@types/react": "^16.8.25",
+        "@types/react-dom": "^16.8.5",
+        "bourbon": "^6.0.0",
+        "bourbon-neat": "^4.0.0",
+        "create-file-webpack": "^1.0.2",
+        "css-loader": "^3.2.0",
+        "html-webpack-inline-source-plugin": "0.0.10",
+        "html-webpack-plugin": "^3.2.0",
+        "node-sass": "^4.12.0",
+        "normalize-opentype.css": "^0.2.4",
+        "normalize.scss": "^0.1.0",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^1.0.0",
+        "terser-webpack-plugin": "^1.4.1",
+        "ts-loader": "^6.0.4",
+        "typescript": "^3.5.3",
+        "url-loader": "^2.1.0",
+        "webpack": "^4.39.1",
+        "webpack-cli": "^3.3.6"
+    },
+
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    }
+}

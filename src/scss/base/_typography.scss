@@ -1,0 +1,141 @@
+html {
+    // noinspection CssBrowserCompatibilityForProperties
+    user-select: none;
+}
+
+
+body {
+    @include font-body;
+
+    z-index: 0;
+    background: $bg-color;
+
+    font-size: 12px;
+    line-height: 1.5em;
+    color: $text-color;
+}
+
+
+a {
+    color: $link-color;
+
+    &:visited {
+        color: $link-dim-color;
+    }
+}
+
+
+p {
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+
+h1,
+h2,
+h3 {
+    @include font-hed;
+
+    margin-top: 0;
+    cursor: default;
+
+    //noinspection CssBrowserCompatibilityForProperties
+    text-rendering: optimizeLegibility;
+
+    //noinspection CssBrowserCompatibilityForProperties
+    font-kerning: normal;
+    font-feature-settings: "kern" 1;
+
+    line-height: 1em;
+
+    .anchor {
+        display: none;
+    }
+}
+
+
+hr {
+    margin: 0 0 30px;
+    border: 0;
+
+    // scss-lint:disable ColorVariable
+    border-bottom: 3px solid black;
+}
+
+
+// noinspection CssUnknownProperty,CssBrowserCompatibilityForProperties
+dl {
+    margin: 0; // override normalize
+    margin-after: 0;
+    margin-before: 0;
+    margin-end: 0;
+    margin-start: 0;
+}
+
+
+// noinspection CssUnknownProperty,CssBrowserCompatibilityForProperties
+dd,
+dt {
+    display: inline-block;
+    margin: 0;
+    margin-after: 0;
+    margin-before: 0;
+    margin-end: 0;
+    margin-start: 0;
+}
+
+
+q {
+    quotes: none;
+}
+
+
+img {
+    // @include font-hed;
+
+    text-decoration: none;
+    color: $text-color;
+}
+
+
+.caps {
+    font-variant: small-caps;
+}
+
+
+.numbers {
+    // noinspection CssBrowserCompatibilityForProperties
+    font-variant-numeric: oldstyle-nums;
+}
+
+
+.ordinal {
+    display: inline; // silence HTML Inspector
+}
+
+
+.pull-double {
+    margin-left: -.38em
+}
+
+
+.push-double {
+    margin-right: .38em
+}
+
+
+.pull-single {
+    margin-left: -.15em
+}
+
+
+.push-single {
+    margin-right: .15em
+}
+
+
+.visual-bell {
+    &.is-hidden {
+        display: none;
+    }
+}

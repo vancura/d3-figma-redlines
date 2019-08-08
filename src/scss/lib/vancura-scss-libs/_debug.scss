@@ -1,0 +1,17 @@
+@mixin debug($color: "red") {
+    @if ($color == "red") {
+        background: rgba(255, 0, 0, .5) !important;
+    }
+
+    @if ($color == "green") {
+        background: rgba(0, 255, 0, .5) !important;
+    }
+
+    @if ($color == "blue") {
+        background: rgba(0, 0, 255, .5) !important;
+    }
+
+    @if ($color == "gray") {
+        background: rgba(128, 128, 128, .5) !important;
+    }
+}

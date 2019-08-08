@@ -1,0 +1,24 @@
+@mixin triangle($triangle-size, $triangle-color, $triangle-direction) {
+    content: "";
+
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid $triangle-size;
+
+    @if ($triangle-direction == top) {
+        border-color: $triangle-color transparent transparent;
+    }
+
+    @if ($triangle-direction == bottom) {
+        border-color: transparent transparent $triangle-color;
+    }
+
+    @if ($triangle-direction == left) {
+        border-color: transparent transparent transparent $triangle-color;
+    }
+
+    @if ($triangle-direction == right) {
+        border-color: transparent $triangle-color transparent transparent;
+    }
+}

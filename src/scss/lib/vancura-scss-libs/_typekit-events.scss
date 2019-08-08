@@ -1,0 +1,11 @@
+%typekit-events {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s .4s ease-out;
+
+    .wf-active &,
+    .wf-inactive & {
+        visibility: visible;
+        opacity: 1;
+    }
+}
