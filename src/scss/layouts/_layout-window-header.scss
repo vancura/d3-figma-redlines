@@ -2,9 +2,10 @@
     @include clearfix;
 
     background: $window-header-bg-color;
+    height: $window-header-height;
 
     img {
-        $gap: ($base-gap - 7px);
+        $gap: ($base-gap - 6px);
 
         margin: $gap 0 $gap $gap;
         float: left;
@@ -13,6 +14,6 @@
     h1 {
         margin: 0;
         float: left;
-        line-height: 62px;
+        line-height: $window-header-height - 2px !important;
     }
 }

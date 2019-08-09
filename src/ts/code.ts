@@ -36,6 +36,7 @@ const solidColor = (r = 255, g = 0, b = 0) => ({
     }
 });
 
+
 const createLine = async options => {
     let line: LineNode;
     let rect: RectangleNode;
@@ -312,18 +313,22 @@ const createLine = async options => {
     return null;
 };
 
+
 async function main() {
     await figma.loadFontAsync({
         family: "Roboto",
         style: "Regular"
     });
+
     await figma.loadFontAsync({
         family: "Inter",
         style: "Bold"
     });
 }
 
+
 const isValidShape = node => node.type === "RECTANGLE" || node.type === "ELLIPSE" || node.type === "GROUP" || node.type === "TEXT" || node.type === "VECTOR" || node.type === "FRAME" || node.type === "FRAME";
+
 
 async function createLineFromMessage({
     direction, align = Alignments.CENTER, strokeCap = "ARROW_LINES"
@@ -371,6 +376,7 @@ async function createLineFromMessage({
         }
     }
 }
+
 
 main()
     .then(() => {

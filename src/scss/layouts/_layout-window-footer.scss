@@ -1,0 +1,15 @@
+.l-window-footer {
+    @include font-small();
+
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    height: $window-footer-height;
+    background: $window-footer-bg-color;
+    border-top: 1px $sep-color solid;
+    padding: 0 $base-gap;
+
+    color: $text-secondary-color;
+    line-height: $window-footer-height - 1;
+}

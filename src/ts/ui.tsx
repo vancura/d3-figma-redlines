@@ -112,6 +112,10 @@ class D3Redlines extends React.Component<{}, {showSelectionError: boolean; lineO
             </div>
 */}
 
+            <footer className="l-window-footer">
+                0.0.1
+            </footer>
+
         </div>);
     }
 

@@ -9,6 +9,7 @@ $is-debug: false;
 @import "../../node_modules/bourbon/core/bourbon";
 @import "../../node_modules/bourbon-neat/core/neat";
 @import "lib/vancura-scss-libs/vancura-scss-libs";
+@import "../../external/figma-plugin-ds/scss/figma-plugin-ds";
 
 
 // BASE
@@ -29,6 +30,7 @@ $is-debug: false;
 
 @import "layouts/layout-main";
 @import "layouts/layout-window-header";
+@import "layouts/layout-window-footer";
 
 
 // MODULES
