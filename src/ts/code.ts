@@ -1,5 +1,5 @@
-const WINDOW_WIDTH = 360;
-const WINDOW_HEIGHT = 265;
+const WINDOW_WIDTH = 770;
+const WINDOW_HEIGHT = 445;
 
 
 figma.showUI(__html__, {

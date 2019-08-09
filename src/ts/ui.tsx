@@ -77,12 +77,47 @@ class D3Redlines extends React.Component<{}, {showSelectionError: boolean; lineO
             </section>
 
             <header className="l-window-header">
-                <img src={require("../images/d3-logo.svg")} alt={"D3 Logo"}/>
+                <img src={require("../images/d3-logo.svg")} />
 
-                <h1>D3 Redlines</h1>
+                <article>
+                    <h1>D3 Redlines</h1>
+                    <p>Please select a Layer, Group or Frame and press buttons below to add a redline, legend or ghost box.</p>
+                </article>
             </header>
 
-            <section className="l-selector-grid">
+            <section className="l-selector">
+                <button id="legend-left" className="button button--secondary">Legend</button>
+                <button id="legend-right" className="button button--secondary">Legend</button>
+
+                <button id="ghostbox" className="button button--secondary">Ghost Box</button>
+
+                <button id="redline-h-top" className="button button--secondary">H Redline Top</button>
+                <button id="redline-v-top" className="button button--secondary">V Redline Top</button>
+                <button id="redline-v-bot" className="button button--secondary">V Redline Bottom</button>
+                <button id="redline-h-bot" className="button button--secondary">H Redline Bottom</button>
+
+                <button id="redline-h-left" className="button button--secondary">H Redline Left</button>
+                <button id="redline-v-left" className="button button--secondary">V Redline Left</button>
+                <button id="redline-h-right" className="button button--secondary">H Redline Right</button>
+                <button id="redline-v-right" className="button button--secondary">V Redline Right</button>
+
+                <img src={require("../images/selection-bg.svg")} id="selection-bg" className="center" />
+                <img src={require("../images/ghostbox.svg")} id="ghostbox" className="center ghostbox" />
+                <img src={require("../images/selection-fg.svg")} id="selection-fg" className="center" />
+
+                <img src={require("../images/legend-left.svg")} id="legend-left" className="center pad legend" />
+                <img src={require("../images/legend-right.svg")} id="legend-right" className="center pad legend" />
+
+                <img src={require("../images/redline-h-left.svg")} id="redline-h-left" className="center pad redline" />
+                <img src={require("../images/redline-h-right.svg")} id="redline-h-right" className="center pad redline" />
+                <img src={require("../images/redline-h-top.svg")} id="redline-h-top" className="center pad redline" />
+                <img src={require("../images/redline-h-bot.svg")} id="redline-h-bot" className="center pad redline" />
+                <img src={require("../images/redline-v-top.svg")} id="redline-v-top" className="center pad redline" />
+                <img src={require("../images/redline-v-bot.svg")} id="redline-v-bot" className="center pad redline" />
+                <img src={require("../images/redline-v-right.svg")} id="redline-v-right" className="center pad redline" />
+                <img src={require("../images/redline-v-left.svg")} id="redline-v-left" className="center pad redline" />
+
+
 {/*
                 <div
                     className="align-icon horizontal top"

@@ -1,6 +1,7 @@
-html {
+* {
     // noinspection CssBrowserCompatibilityForProperties
     user-select: none;
+    cursor: default;
 }
 
 
@@ -26,6 +27,8 @@ a {
 
 
 p {
+    @include font-ui-pos('small', 'normal');
+
     margin: 0 0 1em;
     padding: 0;
 }

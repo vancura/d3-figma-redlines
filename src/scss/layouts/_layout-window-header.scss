@@ -11,9 +11,18 @@
         float: left;
     }
 
-    h1 {
-        margin: 0;
-        float: left;
-        line-height: $window-header-height - 2px !important;
+    article {
+        height: $window-header-height;
+        margin: 0 $base-gap 0 (45px + $base-gap);
+        padding: $base-gap 0 0;
+
+        h1 {
+            margin-left: -1px; // fix the horizontal alignment with negative offset
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
     }
 }

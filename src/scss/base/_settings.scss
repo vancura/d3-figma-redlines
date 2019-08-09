@@ -1,8 +1,9 @@
 $base-gap: 16px;
-$window-header-height: 64px;
+$window-header-height: 80px;
 $window-footer-height: 30px;
+$selector-height: 336px;
 
-$bg-color: white;
+$bg-color: #f9f9f9;
 $text-color: #333;
 $text-secondary-color: #777;
 $link-color: green;
@@ -10,5 +11,7 @@ $link-dim-color: purple;
 
 $sep-color: #e5e5e5;
 
-$window-header-bg-color: #bg-color;
-$window-footer-bg-color: #bg-color;
+$window-header-bg-color: $bg-color;
+$window-footer-bg-color: white;
+
+$button-height: 28px;

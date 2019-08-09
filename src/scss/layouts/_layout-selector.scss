@@ -1,0 +1,158 @@
+.l-selector {
+    $center-button-width: 130px;
+    $edge-button-width: 90px;
+    $side-button-width: 120px;
+    $selection-width: 164px;
+    $selection-height: 120px;
+
+    height: $selector-height;
+    position: relative;
+
+    button {
+        position: absolute;
+
+        &#legend-left,
+        &#legend-right,
+        &#ghostbox {
+            width: $edge-button-width;
+        }
+
+        &#legend-left,
+        &#legend-right {
+            top: 50%;
+            margin-top: $button-height * -0.5;
+        }
+
+        &#legend-left {
+            left: $base-gap;
+        }
+
+        &#legend-right {
+            right: $base-gap;
+        }
+
+        &#ghostbox {
+            right: $base-gap;
+            bottom: $base-gap;
+        }
+
+        &#redline-h-top,
+        &#redline-v-top,
+        &#redline-v-bot,
+        &#redline-h-bot {
+            left: 50%;
+            width: $center-button-width;
+            margin-left: $center-button-width * -0.5;
+        }
+
+        &#redline-h-top {
+            top: $base-gap;
+        }
+
+        &#redline-v-top {
+            top: $base-gap + $button-height + $base-gap;
+        }
+
+        &#redline-v-bot {
+            bottom: $base-gap + $button-height + $base-gap;
+        }
+
+        &#redline-h-bot {
+            bottom: $base-gap;
+        }
+
+        &#redline-h-left,
+        &#redline-v-left,
+        &#redline-h-right,
+        &#redline-v-right {
+            width: $side-button-width;
+            top: 50%;
+        }
+
+        &#redline-h-left,
+        &#redline-v-left {
+            left: $base-gap + $edge-button-width + $base-gap;
+        }
+
+        &#redline-h-right,
+        &#redline-v-right {
+            right: $base-gap + $edge-button-width + $base-gap;
+        }
+
+        &#redline-h-left,
+        &#redline-h-right {
+            margin-top: $base_gap * -0.5 - $button-height;
+        }
+
+        &#redline-v-left,
+        &#redline-v-right {
+            margin-top: $base_gap * 0.5;
+        }
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: $selection-width * -0.5;
+        margin-top: $selection-height * -0.5;
+
+        &.pad {
+            padding-top: 20px;
+        }
+
+        &#legend-left {
+            margin-left: $selection-width * -0.5 - 45px;
+        }
+
+        &#legend-right {
+            margin-left: $selection-width * 0.5 - 15px;
+        }
+
+        &#redline-h-left,
+        &#redline-h-right {
+            padding-top: 52px;
+        }
+
+        &#redline-h-top {
+            padding-top: 38px;
+        }
+
+        &#redline-h-bot {
+            padding-top: 55px;
+        }
+
+        &#redline-v-top {
+            padding-top: 3px;
+        }
+
+        &#redline-h-left {
+            margin-left: $selection-width * -0.5 - 11px;
+        }
+
+        &#redline-h-right,
+        &#redline-h-top,
+        &#redline-h-bot {
+            margin-left: $selection-width * -0.5 + 20px;
+        }
+
+        &#redline-v-top,
+        &#redline-v-bot {
+            padding-left: 67px;
+        }
+
+        &#redline-v-right {
+            padding-left: 78px;
+        }
+
+        &#redline-v-left {
+            padding-left: 47px;
+        }
+
+        &.legend,
+        &.redline,
+        &.ghostbox {
+            display: none;
+        }
+    }
+}
