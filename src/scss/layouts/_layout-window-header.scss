@@ -1,8 +1,18 @@
 .l-window-header {
+    @include clearfix;
+
     background: $window-header-bg-color;
-    padding: $base-gap $base-gap ($base-gap + 1);
+
+    img {
+        $gap: ($base-gap - 7px);
+
+        margin: $gap 0 $gap $gap;
+        float: left;
+    }
 
     h1 {
         margin: 0;
+        float: left;
+        line-height: 62px;
     }
 }

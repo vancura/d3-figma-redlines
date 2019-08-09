@@ -77,6 +77,8 @@ class D3Redlines extends React.Component<{}, {showSelectionError: boolean; lineO
             </section>
 
             <header className="l-window-header">
+                <img src={require("../images/d3-logo.svg")} alt={"D3 Logo"}/>
+
                 <h1>D3 Redlines</h1>
             </header>
 
