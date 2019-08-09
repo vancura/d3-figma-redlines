@@ -11,81 +11,81 @@
     button {
         position: absolute;
 
-        &#legend-left,
-        &#legend-right,
-        &#ghostbox {
+        &#button-legend-left,
+        &#button-legend-right,
+        &#button-ghostbox {
             width: $edge-button-width;
         }
 
-        &#legend-left,
-        &#legend-right {
+        &#button-legend-left,
+        &#button-legend-right {
             top: 50%;
             margin-top: $button-height * -0.5;
         }
 
-        &#legend-left {
+        &#button-legend-left {
             left: $base-gap;
         }
 
-        &#legend-right {
+        &#button-legend-right {
             right: $base-gap;
         }
 
-        &#ghostbox {
+        &#button-ghostbox {
             right: $base-gap;
             bottom: $base-gap;
         }
 
-        &#redline-h-top,
-        &#redline-v-top,
-        &#redline-v-bot,
-        &#redline-h-bot {
+        &#button-redline-h-top,
+        &#button-redline-v-top,
+        &#button-redline-v-bot,
+        &#button-redline-h-bot {
             left: 50%;
             width: $center-button-width;
             margin-left: $center-button-width * -0.5;
         }
 
-        &#redline-h-top {
+        &#button-redline-h-top {
             top: $base-gap;
         }
 
-        &#redline-v-top {
+        &#button-redline-v-top {
             top: $base-gap + $button-height + $base-gap;
         }
 
-        &#redline-v-bot {
+        &#button-redline-v-bot {
             bottom: $base-gap + $button-height + $base-gap;
         }
 
-        &#redline-h-bot {
+        &#button-redline-h-bot {
             bottom: $base-gap;
         }
 
-        &#redline-h-left,
-        &#redline-v-left,
-        &#redline-h-right,
-        &#redline-v-right {
+        &#button-redline-h-left,
+        &#button-redline-v-left,
+        &#button-redline-h-right,
+        &#button-redline-v-right {
             width: $side-button-width;
             top: 50%;
         }
 
-        &#redline-h-left,
-        &#redline-v-left {
+        &#button-redline-h-left,
+        &#button-redline-v-left {
             left: $base-gap + $edge-button-width + $base-gap;
         }
 
-        &#redline-h-right,
-        &#redline-v-right {
+        &#button-redline-h-right,
+        &#button-redline-v-right {
             right: $base-gap + $edge-button-width + $base-gap;
         }
 
-        &#redline-h-left,
-        &#redline-h-right {
+        &#button-redline-h-left,
+        &#button-redline-h-right {
             margin-top: $base_gap * -0.5 - $button-height;
         }
 
-        &#redline-v-left,
-        &#redline-v-right {
+        &#button-redline-v-left,
+        &#button-redline-v-right {
             margin-top: $base_gap * 0.5;
         }
     }
@@ -101,58 +101,62 @@
             padding-top: 20px;
         }
 
-        &#legend-left {
+        &#helper-legend-left {
             margin-left: $selection-width * -0.5 - 45px;
         }
 
-        &#legend-right {
+        &#helper-legend-right {
             margin-left: $selection-width * 0.5 - 15px;
         }
 
-        &#redline-h-left,
-        &#redline-h-right {
+        &#helper-redline-h-left,
+        &#helper-redline-h-right {
             padding-top: 52px;
         }
 
-        &#redline-h-top {
+        &#helper-redline-h-top {
             padding-top: 38px;
         }
 
-        &#redline-h-bot {
+        &#helper-redline-h-bot {
             padding-top: 55px;
         }
 
-        &#redline-v-top {
+        &#helper-redline-v-top {
             padding-top: 3px;
         }
 
-        &#redline-h-left {
+        &#helper-redline-h-left {
             margin-left: $selection-width * -0.5 - 11px;
         }
 
-        &#redline-h-right,
-        &#redline-h-top,
-        &#redline-h-bot {
+        &#helper-redline-h-right,
+        &#helper-redline-h-top,
+        &#helper-redline-h-bot {
             margin-left: $selection-width * -0.5 + 20px;
         }
 
-        &#redline-v-top,
-        &#redline-v-bot {
+        &#helper-redline-v-top,
+        &#helper-redline-v-bot {
             padding-left: 67px;
         }
 
-        &#redline-v-right {
+        &#helper-redline-v-right {
             padding-left: 78px;
         }
 
-        &#redline-v-left {
+        &#helper-redline-v-left {
             padding-left: 47px;
         }
 
-        &.legend,
-        &.redline,
-        &.ghostbox {
+        &.is-legend,
+        &.is-redline,
+        &.is-ghostbox {
             display: none;
+        }
+
+        &.is-visible {
+            display: block;
         }
     }
 }
