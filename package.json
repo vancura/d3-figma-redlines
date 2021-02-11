@@ -34,7 +34,7 @@
         "css-loader": "^3.2.0",
         "html-webpack-inline-source-plugin": "0.0.10",
         "html-webpack-plugin": "^3.2.0",
-        "node-sass": "^4.12.0",
+        "node-sass": "^4.13.1",
         "normalize-opentype.css": "^0.2.4",
         "normalize.scss": "^0.1.0",
         "sass-loader": "^7.1.0",
